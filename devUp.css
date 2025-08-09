@@ -79,7 +79,6 @@ background-color: black;
 width: 700px;
 height: 400px;
  }
-
 #buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 buttons in a row */
