@@ -54,3 +54,52 @@ function addSub() {
     }
 }
 
+// Select elements
+const todoInput = document.querySelector('.todo-input');
+const todoButton = document.querySelector('.todo-button');
+const todoBox = document.querySelector('.todoList-box');
+
+// Create a list container dynamically
+const todoList = document.createElement('ul');
+todoList.classList.add('todo-list');
+todoBox.appendChild(todoList);
+
+// Add new todo item when button clicked
+todoButton.addEventListener('click', () => {
+  const taskText = todoInput.value.trim();
+
+  if (taskText !== '') {
+    // Create list item
+    const li = document.createElement('li');
+    li.textContent = taskText;
+
+    // Create delete button
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = '❌';
+    deleteBtn.classList.add('delete-btn');
+
+    // Append delete button to list item
+    li.appendChild(deleteBtn);
+
+    // Add item to the list
+    todoList.appendChild(li);
+
+    // Clear input
+    todoInput.value = '';
+
+    // Delete functionality
+    deleteBtn.addEventListener('click', () => {
+      li.remove();
+    });
+  } else {
+    alert('Please enter a to-do item!');
+  }
+});
+
+// Optional: allow pressing Enter to add
+todoInput.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    todoButton.click();
+  }
+});
+
