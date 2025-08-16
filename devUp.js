@@ -96,7 +96,7 @@ todoButton.addEventListener('click', () => {
   }
 });
 
-// Optional: allow pressing Enter to add
+//allow pressing Enter to add
 todoInput.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
     todoButton.click();
