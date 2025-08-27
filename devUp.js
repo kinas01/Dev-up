@@ -103,3 +103,34 @@ todoInput.addEventListener('keypress', (e) => {
   }
 });
 
+
+
+const countBtn = document.querySelector(".increase");
+const subBtn = document.querySelector(".sub-dice");
+const addBtn = document.querySelector(".add-dice");
+const clearBtn = document.querySelector(".clear-all");
+
+count = 0;
+
+subBtn.addEventListener( "click", () => {
+  count--,
+  countBtn.textContent = count;
+})
+
+addBtn.addEventListener( "click", () =>{
+  count++;
+  countBtn.textContent = count;
+})
+
+clearBtn.addEventListener( "click", () => {
+   let sliced = count.toString().slice(0, -1);
+
+   if (sliced === "" || sliced === "-") {
+    count = 0;
+  }
+    else{
+      count = parseInt(sliced);
+    }
+    countBtn.textContent = count;
+});
+
