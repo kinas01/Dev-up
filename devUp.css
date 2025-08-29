@@ -209,77 +209,12 @@ height: 400px;
   
 }
 
-..box-container {
-  width: 100%;
-  height: 500px;
-  background-color: bisque;
-}
-
-.colors-box {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.colors-box li {
-  border: 3px solid black;
-  height: 50px;          /* give equal height */
-  display: flex;         
-  align-items: center;   /* center numbers */
-  justify-content: center;
-}
-
-..box-container {
-  width: 100%;
-  height: 500px;
-  background-color: bisque;
-}
-
-.colors-box {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.colors-box li {
-  border: 3px solid black;
-  height: 50px;          /* give equal height */
-  display: flex;         
-  align-items: center;   /* center numbers */
-  justify-content: center;
-}
-
-..box-container {
-  width: 100%;
-  height: 500px;
-  background-color: bisque;
-}
-
-.colors-box {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.colors-box li {
-  border: 3px solid black;
-  height: 50px;          /* give equal height */
-  display: flex;         
-  align-items: center;   /* center numbers */
-  justify-content: center;
-}
 
 .box-button {
     border: 2px solid black;
     color: white;
     width: 200px;
-    height: 30px;
+    height: 45px;
     text-align: center;
     font-size: large;
     background-color: green;
