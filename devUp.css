@@ -166,6 +166,7 @@ height: 400px;
     background-color: green;
     border-radius: 10px;
     font-size: x-large;
+    color: white;
 }
 
 .dice:hover {
@@ -175,6 +176,7 @@ height: 400px;
 
 .clear-all {
     background-color: red;
+    color: white;
 }
 
 
@@ -182,14 +184,14 @@ height: 400px;
 .box-container {
   width: 100%;
   height: 400px;
-  background-color: bisque;
+  background-color:white;
   display: flex;
   justify-content: center;
   align-items: center;
   
 }
 
-.colors-box {
+.color-box {
   display: grid;
   grid-template-columns: repeat(5, 1fr); 
   list-style: none;
@@ -197,7 +199,7 @@ height: 400px;
   margin: 0;
 }
 
-.colors-box li {
+.color-box li {
   border: 1.5px solid black;
   height: 70px;
   width: 70px;       
@@ -205,4 +207,81 @@ height: 400px;
   align-items: center; 
   justify-content: center;
   
+}
+
+..box-container {
+  width: 100%;
+  height: 500px;
+  background-color: bisque;
+}
+
+.colors-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.colors-box li {
+  border: 3px solid black;
+  height: 50px;          /* give equal height */
+  display: flex;         
+  align-items: center;   /* center numbers */
+  justify-content: center;
+}
+
+..box-container {
+  width: 100%;
+  height: 500px;
+  background-color: bisque;
+}
+
+.colors-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.colors-box li {
+  border: 3px solid black;
+  height: 50px;          /* give equal height */
+  display: flex;         
+  align-items: center;   /* center numbers */
+  justify-content: center;
+}
+
+..box-container {
+  width: 100%;
+  height: 500px;
+  background-color: bisque;
+}
+
+.colors-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.colors-box li {
+  border: 3px solid black;
+  height: 50px;          /* give equal height */
+  display: flex;         
+  align-items: center;   /* center numbers */
+  justify-content: center;
+}
+
+.box-button {
+    border: 2px solid black;
+    color: white;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    font-size: large;
+    background-color: green;
+
 }
